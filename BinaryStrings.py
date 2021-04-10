@@ -1,3 +1,16 @@
+
+"""Code by M.Shaihu Abdul Kadhir
+input format:
+first line length of the string..second and third line are the two binary Strings
+4      
+1101
+0011
+
+output
+2
+
+the minimum operation required to change string1 and get equals to string2
+"""
 n=int(input())
 str1=input()
 str2=input()
@@ -29,7 +42,6 @@ for i in range(n):
                 arr1[i]=swap(arr1[i])
                 arr1[i+1]=swap(arr1[i+1])
                 count=count+1
-        else:
-            pass
+       
 print(count)
 print(arr1,arr2)
